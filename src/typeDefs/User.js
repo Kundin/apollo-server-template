@@ -14,5 +14,7 @@ module.exports = gql`
     firstName: String!
 
     lastName: String!
+
+    books: [Book]
   }
 `;
