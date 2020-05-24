@@ -1,7 +1,9 @@
 const { gql } = require('apollo-server');
 
 module.exports = gql`
-  type Test {
-    test: String
+  type Author {
+    firstName: String
+
+    lastName: String
   }
 `;

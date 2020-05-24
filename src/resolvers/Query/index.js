@@ -1,7 +1,11 @@
-const test = require('./test');
+const books = require('./books');
+const me = require('./me');
+const myBooks = require('./myBooks');
 
 module.exports = {
   Query: {
-    test,
+    books,
+    me,
+    myBooks,
   },
 };
