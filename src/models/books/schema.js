@@ -1,6 +1,6 @@
-import { Schema } from 'mongoose';
+const { Schema } = require('mongoose');
 
-export default new Schema(
+module.exports = new Schema(
   {
     types: {
       type: [String],

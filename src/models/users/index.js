@@ -1,3 +1,3 @@
-import Books from './model';
+const Books = require('./model');
 
-export default Books;
+module.exports = Books;

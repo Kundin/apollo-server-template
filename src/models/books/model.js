@@ -1,7 +1,7 @@
 /* eslint-disable func-names */
 
-import { model } from 'mongoose';
+const { model } = require('mongoose');
 
-import BooksSchema from './schema';
+const BooksSchema = require('./schema');
 
-export default model('Books', BooksSchema);
+module.exports = model('Books', BooksSchema);

@@ -1,3 +1,3 @@
-import Users from './model';
+const Users = require('./model');
 
-export default Users;
+module.exports = Users;

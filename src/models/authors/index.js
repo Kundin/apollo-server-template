@@ -1,3 +1,3 @@
-import Authors from './model';
+const Authors = require('./model');
 
-export default Authors;
+module.exports = Authors;
