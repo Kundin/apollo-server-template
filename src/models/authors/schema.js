@@ -2,24 +2,11 @@ import { Schema } from 'mongoose';
 
 export default new Schema(
   {
-    types: {
+    firstName: {
       type: [String],
     },
 
-    cover: {
-      type: String,
-    },
-
-    title: {
-      type: String,
-      required: true,
-    },
-
-    author: {
-      type: String,
-    },
-
-    description: {
+    lastName: {
       type: String,
     },
   },
