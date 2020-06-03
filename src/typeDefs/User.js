@@ -11,9 +11,15 @@ module.exports = gql`
     """
     privilegies: [String]!
 
-    firstName: String!
+    givenName: String!
 
-    lastName: String!
+    familyName: String!
+
+    name: String!
+
+    photo: String
+
+    email: String
 
     books: [Book]
   }

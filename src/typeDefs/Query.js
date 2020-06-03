@@ -2,8 +2,10 @@ const { gql } = require('apollo-server');
 
 module.exports = gql`
   type Query {
-    library: [Book]
+    books(user: UserInput): [Book]
 
-    me: User
+    user(email: String!): User
+
+    library: [Book]
   }
 `;

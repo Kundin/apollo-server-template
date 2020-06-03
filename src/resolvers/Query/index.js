@@ -1,9 +1,11 @@
+const books = require('./books');
 const library = require('./library');
-const me = require('./me');
+const user = require('./user');
 
 module.exports = {
   Query: {
+    books,
     library,
-    me,
+    user,
   },
 };
