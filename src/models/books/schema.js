@@ -4,10 +4,12 @@ export default new Schema(
   {
     types: {
       type: [String],
+      required: true,
     },
 
     cover: {
       type: String,
+      required: true,
     },
 
     title: {
@@ -16,7 +18,9 @@ export default new Schema(
     },
 
     author: {
-      type: String,
+      type: Schema.Types.ObjectId,
+      ref: 'Authors',
+      required: true,
     },
 
     description: {
