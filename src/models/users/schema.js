@@ -2,25 +2,38 @@ import { Schema } from 'mongoose';
 
 export default new Schema(
   {
-    types: {
+    privilegies: {
       type: [String],
+      required: true,
     },
 
-    cover: {
-      type: String,
-    },
-
-    title: {
+    givenName: {
       type: String,
       required: true,
     },
 
-    author: {
+    familyName: {
+      type: String,
+      required: true,
+    },
+
+    name: {
+      type: String,
+      required: true,
+    },
+
+    photo: {
       type: String,
     },
 
-    description: {
+    email: {
       type: String,
+      required: true,
+    },
+
+    books: {
+      type: Schema.Types.ObjectId,
+      ref: 'Books',
     },
   },
   {

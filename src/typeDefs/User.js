@@ -19,7 +19,7 @@ module.exports = gql`
 
     photo: String
 
-    email: String
+    email: String!
 
     books: [Book]
   }
